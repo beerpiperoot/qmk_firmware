@@ -1,8 +1,8 @@
 {
-	"keyboard_name": "Lotus 58 Glow",
-	"manufacturer": "Tweetys Wild Thinking",
-	"url": "https://lectronz.com/stores/tweetys-wild-thinking",
-	"maintainer": "TweetyDaBird",
+	"keyboard_name": "Lotus 58",
+	"manufacturer": "beer-pipe-root",
+	"url": "nothing",
+	"maintainer": "BeerPipeRoot",
 
 	"development_board": "promicro",
 	"bootloader_instructions": "Short marked pads on PCB, or hold top-outer key when plugging in each hand.",
@@ -42,8 +42,6 @@
 
 	"split": {
 		"enabled": true,
-		"main": "right",
-		"soft_serial_pin": "D2",
 
 		"transport": {
 			"protocol": "serial",

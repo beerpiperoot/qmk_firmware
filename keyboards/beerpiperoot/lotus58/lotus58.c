@@ -47,25 +47,13 @@ static void print_status_narrow(void) {
             oled_write_P(PSTR("Undef"), false);
     }
 
-	// Display autoshift
     oled_write_P(PSTR("\n"), false);
     led_t led_usb_state = host_keyboard_led_state();
     oled_write_ln_P(PSTR("Caps- lock"), led_usb_state.caps_lock);
-	bool autoshift = get_autoshift_state();
-	oled_write_P(PSTR("\n"), false);
-	oled_write_P(PSTR("Auto-Shift"), autoshift);
-	oled_write_P(PSTR("\n"), false);
-
 }
 
 bool oled_task_kb(void) {
-	// Render the OLED
-	if (is_keyboard_master()) {
-		print_status_narrow();
-    } else {
-		print_status_narrow();
-        //render_logo();
-    }
+	print_status_narrow();
 	return false;
 }
 
