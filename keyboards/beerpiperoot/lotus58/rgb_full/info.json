@@ -58,6 +58,7 @@
     },
 
 	"rgblight": {
+        "sleep": true,
         "led_count": 58,
         "pin": "D3",
 		"split": true,
@@ -69,7 +70,9 @@
 		"animations": {
             "breathing": true,
 			"rainbow_mood": true,
-			"static_gradient": true
+			"static_gradient": true,
+            "snake": true,
+            "christmas": true
         }
     },
 
