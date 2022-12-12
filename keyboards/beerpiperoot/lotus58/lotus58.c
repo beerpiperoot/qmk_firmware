@@ -49,7 +49,8 @@ static void print_status_narrow(void) {
 
     oled_write_P(PSTR("\n"), false);
     led_t led_usb_state = host_keyboard_led_state();
-    oled_write_ln_P(PSTR("Caps- lock"), led_usb_state.caps_lock);
+    oled_write_ln_P(PSTR("Caps-"), led_usb_state.caps_lock);
+    oled_write_ln_P(PSTR("lock"), led_usb_state.caps_lock);
 }
 
 bool oled_task_kb(void) {
